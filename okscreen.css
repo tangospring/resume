@@ -1,0 +1,710 @@
+@charset "utf-8";
+/*resets need to be done in one css file to facilitate css switching *****************************/
+/* ok reset styles */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt,
+blockquote, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, address, article, aside, details, figure, figcaption, img,
+footer, header, hgroup, menu, nav, output, section, summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+	outline: 0;
+    font-size: 62.5%;
+    font: inherit;
+	font-style:normal;
+    vertical-align: baseline;
+	background: transparent;
+	-webkit-text-size-adjust: 100%;
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;	
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+	display: block; 
+}
+:focus {
+	outline: 0;}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;}
+/* setup body */
+body, p {
+    line-height: 1.4;
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1em;
+}
+a {
+	text-decoration: none;
+	color: #2e506f;
+}
+/* starting margins */
+p, h1, h2, h3, h4, h5, h6, ol, ul, li, dl, blockquote, address { margin: 1.2em; }
+li { margin-left: 2em; }
+p { max-width:45em; }
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1 { font-size: 300%; font-weight:100; font-style:normal;}
+h2 { font-size: 180%; }
+h3 { font-size: 160%; }
+h4 { font-size: 140%; }
+h5 { font-size: 120%; }
+h6 { font-size: 100%; }
+
+blockquote, q { 
+	quotes: none; 
+}
+blockquote:before, blockquote:after, q:before, q:after { 
+	content: ''; content: none; 
+}
+img { border: 0; max-width: 100%; }
+
+/******************* end of resets *****************/
+
+/* CSS for screen layout */
+/*hide bkg for the "back to screen" arrow on H1 */
+.ok-screen-hide {
+	display: none;
+}
+
+/****************** backgrounds */
+body {
+    background: url(images/ok.jpg) left top no-repeat fixed, #686051 url(images/okbkg.jpg) repeat;
+}
+
+/****************** layout */
+.clear {
+	margin: 0;
+    padding: 0;
+    clear: both;
+}
+/*
+#align-center {
+	min-width: 1000px;
+}
+*/
+address {
+	float:right;
+	margin-top:12em;
+	margin-right:4em;
+	margin-bottom:4em;
+}
+article {
+	width:100%;
+	padding:60px 60px 10px 60px;
+	background:#d7dadd;
+}
+article.summary {
+	padding-bottom:60px;
+	background:#2e506f;
+}
+article.summary section {
+	display:block;	
+	min-width:30em;
+	padding:0;
+	margin:0;
+	background:#2e506f;
+}
+article.summary h2+section {
+	float:right;
+	max-width: 36em;
+	padding-top:3em;
+}
+
+header hgroup {
+	display:block;
+	clear:right;
+}
+
+/*
+div.main-content-container {
+	width:100%;
+	min-width:50em;
+}
+*/
+.ok-two-column {
+	float:left;
+	width:48%;
+}
+.ok-two-column + .ok-two-column {
+	margin-left:3%;
+}
+div.experience-bkg {
+/*	width:100%;
+	min-width:50em; */
+	background:#f4f5f6;
+}
+section  {
+	margin:1em 0;
+	padding:3em;
+	background:#f4f5f6;
+}
+.exp-dst {
+	float:left;
+	width:36%;
+	padding:2em 0 1em 3em;
+}
+.exp-dst+.exp-dst {
+	padding-left:0;
+	width:32%;
+}
+
+section.NoTopWhiteSpace {
+	padding-top:0;
+	margin-top:0;	
+}
+section.NoBottomWhiteSpace {
+	padding-bottom:0;
+	margin-bottom:0;
+}
+section, div.experience-bkg {
+	border-radius:0 50px;
+}
+#okwufooMessage {
+	width:500px;
+	padding:60px 60px 40px 60px;
+}
+#okwufooMessage input {
+	background-color:#FFF;
+	padding:2em;
+}
+aside {
+	float:right;
+	width:30%;
+	margin:0 0 0 2em;
+	padding:20pt;
+	background-color:#FF9;
+	-ms-transform:rotate(5deg);
+	-webkit-transform:rotate(5deg);
+	-o-transform:rotate(5deg);
+	-moz-transform:rotate(5deg);
+	-webkit-transform:rotate(5deg);
+	transform:rotate(5deg);	
+	box-shadow:2px 2px 5px #333;
+	-moz-box-shadow:2px 2px 5px #333;
+	-webkit-box-shadow:2px 2px 5px #333;
+}
+footer {
+	margin:0;
+	background:#2e506f;
+}
+footer div#footerSub {
+	margin:0;
+	background:#11161b;
+}
+
+/**************** typography */
+h1, h2, h3, h4, h5, h6, address, #navigation ul li a, #fixednav li a  {
+	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-size:7em;
+	font-weight:normal;
+	margin:0 auto 0 60px;
+	padding-bottom:0;
+	color:#2e506f;
+}
+h1>a#okmaskLink {
+	color:#2e506f;
+	cursor:text;
+	background:none;
+}
+h2 {text-transform:uppercase;
+	margin:0;
+	padding-bottom:10px;
+	font-size: 3.6em;
+	font-weight:100;
+	color:#546e82;
+}
+h3 {
+	margin-left:0;
+	font-weight: normal;
+	font-size: 2em;
+	margin-top:30px;
+	margin-bottom:5px;
+	color:#cb422f;
+	font-variant:small-caps;
+}
+h3 span.exp-years, h4 span.exp-years {
+	font-size:0.78em;
+}
+h3 span.exp-years {
+ 	color:#8eaa0d;
+}
+h4 span.exp-years {
+	font-weight:100;
+}
+h4 {font-size: 1.5em;
+	font-weight:normal;
+	margin: 0;
+	color:#2e506f;
+}
+h1+h4 {
+	margin:0 0 18px 65px;
+	padding:0 inherit;
+	font-size:1.6em;
+	font-weight:bold;
+	letter-spacing:0.18em;
+	color:#2e506f;
+}
+h5 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0; 
+	padding:2px 0 5px 0;
+	color:#546e82;
+	display:block;
+	width:100%;
+}
+article.summary h5 {
+	padding-top:10px;
+	color:#aeb2ae;	
+}
+p+h5 {
+	padding-top:12px;
+}
+h2+div.main-content-container hgroup.ok-company {
+	margin-top:0;
+	padding-top:0;
+	padding-bottom:20px;
+}
+hgroup#jobTitleInsert {
+	background-color:#d7dadd;	
+	padding:0 0 20px 0;
+}
+span.okfooterName {
+	font-size:1.6em;
+	font-weight:bold;
+	color:#ced0ce;	
+}
+address a {
+	font-size:1.6em;
+	font-weight:bold;
+	color:#aeb2ae;	
+	-webkit-transition: all 0.2s linear;
+  	-moz-transition: all 0.2s linear;
+  	transition: all 0.2s linear;
+}
+address a:hover {
+	color:#fff;	
+}
+ul {
+	margin-top:0;
+
+}
+li {
+	margin:0 2em;
+	font-size:1em;
+}
+article.summary li {
+	color:#aeb2ae;	
+	display:block;
+	min-width:20em;
+}
+article.summary section ul {
+	margin-bottom:0;
+	padding-bottom:0;
+}
+section.okinterests2 {
+	padding-top:0;
+	margin-top:0;
+}
+article.summary>section>p {
+	margin-top:0;
+	line-height:1.6em;
+	font-size:1.4em;
+	color:#aeb2ae;
+}
+h5+p {
+	margin-top:10px; 
+	margin-bottom:15px;
+}
+p, dl {
+	font-size:1em;
+	margin-bottom:0;
+}
+footer small {
+	float:right;
+	font-size:0.8em;
+	margin:1.5em;
+	color:#666;
+}
+footer small+small {
+	float:left;
+}
+blockquote {
+	font-size:1.2em;
+	font-style: italic;
+	font-weight: lighter;
+	padding-bottom:0.8em;
+	margin:0;
+}
+aside p {
+	font-size:1.2em;
+	margin:5pt 0 8pt 0;
+	padding-top:11pt;
+}
+blockquote+p  {
+	font-size:1em;
+	padding:8pt 0 0 15pt;
+	border-top: thin dotted;
+	margin:0;
+}
+
+
+
+
+
+
+ul.list-img-bullet {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul.list-img-bullet li {
+	margin:0;
+    padding-left: 15px;	
+    background-image: url(images/list-bullet-orange.png);
+    background-repeat: no-repeat;
+    background-position: 0 .5em;
+
+}
+
+
+
+
+ul.ok-skills {
+	margin-top:0;
+}
+ul.ok-skills li {
+	list-style:none;
+	display:block;
+	float:left;
+	margin: 0 30pt 0 0;
+}
+ul.ok-skills li+li {
+	border-left:thin dotted;
+	padding-left: 30pt;
+}
+dl dt { 
+	float: left; 
+	clear: left; 
+	width: 45pt; 
+	text-align:left;
+	color:#666;
+}
+dl dt:after { 
+	content: " — "; 
+} 
+dl dd { 
+	margin: 0 0 0 15pt; 
+	padding: 0 0 1pt 0; 
+}
+dl+p {
+	margin-top:8pt;
+}
+ul.list-no-bullets {
+	margin-top: 10pt;
+	-moz-column-count: 2;
+	-moz-column-gap: 2em;
+	-moz-column-rule:thin dotted #666;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 2em;
+	-webkit-column-rule:thin dotted #666;
+	column-count: 2;
+	column-gap: 2em;
+	column-rule:thin dotted #666;
+}
+ul.list-no-bullets li {
+	list-style:none;
+	margin:8pt 0;
+}
+
+nav ul {
+	list-style:none;
+}
+
+/* hidden fixed navigation */
+#fixedbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(46,80,111,0.7);
+  box-shadow: 0 3px 5px #333;
+  -moz-box-shadow: 0 3px 5px #333;
+  -webkit-box-shadow: 0 3px 5px #333;
+  z-index:10;
+}
+
+/* top navigation, see http://designshack.net/articles/javascript/simple-steps-for-creating-a-fixed-navigation-bar/ - not a clean markup */
+#navigation {
+  display: block;
+  height: 70px;
+  background: rgba(46,80,111,0.7);
+}
+#navigation ul, #fixednav {
+    display: block;
+	width: 900px;
+	margin: 0 auto;
+	padding: 0px; 
+}
+#navigation ul li, #fixednav li { 
+	display: inline; 
+	list-style:none;
+	float: left; 
+	margin:0px;
+}
+#navigation ul li a, #fixednav li a  {
+  	display: block;
+	width:110px;
+    margin: 0;
+  	padding: 0;
+  	color: #bac0be;
+  	font-size: 12pt;
+  	text-decoration: none;
+  	text-transform:uppercase;
+	text-align:center;
+  	line-height: 70px;
+ /* Using a fixed height for the bar we can setup the same fixed value for line-height properties on the list items. This forces all text to be centered vertically within the navbar container. */
+  	font-weight: bold;
+  	-webkit-transition: all 0.2s linear;
+  	-moz-transition: all 0.2s linear;
+  	transition: all 0.2s linear;
+}
+a.oknavPrint {
+	background: rgba(171,143,50,0.5);
+}
+a.oknavPortfolio  {
+	background: rgba(203,66,47,0.6);
+}
+#navigation ul li a:hover, #fixednav li a:hover { 
+	color: #fff; 
+	background: rgba(46,80,111,0.7);
+}
+#navigation ul li#summary a:hover {
+	background: rgba(46,80,111,0);
+}
+#navigation ul li a.oknavPrint:hover, #fixednav li a.oknavPrint:hover {
+	background: rgba(171,143,50,0.7);
+}
+#navigation ul li a.oknavPortfolio:hover, #fixednav li a.oknavPortfolio:hover {
+	background: rgba(203,66,47,0.8);
+}
+
+@media only screen and (max-width: 1020px) {
+h1 {
+	font-size:5em;
+}
+
+article.summary h2+section {
+ 	display:none;
+}
+
+article.summary>section>p {
+	margin-top:0;
+	line-height:1.6em;
+	font-size:1.1em;
+	color:#aeb2ae;
+}
+#okwufooMessage, .ok-print-hide {
+	display: none;
+} 
+
+}
+
+@media only screen and (max-width: 800px) {
+body {
+    background: url(images/ok.jpg) left top no-repeat fixed;
+	background-size: 117%;
+}
+
+#align-center {
+	min-width: 320px;
+}
+address {
+	float:left;
+	margin:0.5em 0 8em 0.8em;
+}
+address a {
+	font-size:1em;
+}
+span.okfooterName {
+	font-size:1em;
+}
+h1 {
+	clear:left;
+	font-size:3em;
+	margin-left:0.2em;
+}
+h4 {font-size: 1.5em;
+	line-height:1.2;
+	font-weight:normal;
+	margin: 0;
+}
+h1+h4 {
+	margin:0.5em 0 0 0;
+	padding:0.2em 0.3em 0.3em 0.5em;
+	font-size:1.5em;
+	font-weight:normal;
+	letter-spacing:0;
+	line-height:1.3em;
+	background-color:rgba(255,255,255,0.3);
+}
+h2 {
+	font-size: 1.5em;
+}
+article {
+	padding:1.5em 0.8em;
+}
+article.summary section {
+	min-width:100%;
+}
+article.summary h2+section {
+	float: none;
+	padding-top:0;
+}
+div.main-content-container {
+	min-width: 100%;
+}
+div.experience-bkg {
+	min-width:100%;
+}
+hgroup.ok-company {
+	min-width:100%;
+	padding-top:1.5em;
+}
+section  {
+	padding:1em;
+}
+.exp-dst {
+	float:none;
+	width:100%;
+	padding:1.5em 1em 0 1em;
+}
+.exp-dst+.exp-dst {
+	padding:0 1em 0 1em;
+	width:100%;
+}
+h3 {
+	font-weight: bold;
+	font-size: 1em;
+	margin-top:20px;
+	margin-bottom:5px;
+}
+h3 span.exp-years, h4 span.exp-years {
+	font-size:0.9em;
+}
+hgroup.NoBottomWhiteSpace h3 {
+	padding-top:1.5em;
+}
+h5 {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0; 
+	padding:2px 0 5px 0;
+	display:block;
+	width:auto;
+}
+article.summary h5 {
+	padding-top:15px;
+	color:#aeb2ae;	
+}
+p+h5 {
+	padding-top:15px;
+}
+li {
+	margin:0 2em;
+}
+article.summary>section>p {
+	display:none;
+}
+#okwufooMessage {
+ 	display:none;
+}
+aside {
+	float: none;
+	width:80%;
+	margin:0 0 1em 2em;
+	padding:2em;
+	-ms-transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+	-o-transform:rotate(0deg);
+	-moz-transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+	transform:rotate(0deg);	
+	box-shadow:2px 2px 5px #333;
+	-moz-box-shadow:2px 2px 5px #333;
+	-webkit-box-shadow:2px 2px 5px #333;
+}
+blockquote {
+	font-size:1em;
+	line-height:1.6;
+	letter-spacing:0.05em;
+}
+aside p {
+	font-size:0.9em;
+	margin:0 0 0.5em 0;
+	padding-top:0.5em;
+}
+section, div.experience-bkg {
+	border-radius:0 30px;
+}
+ul.list-img-bullet {
+	padding:1em .3em;
+}
+ul.ok-skills {
+	margin-top:1em;
+}
+ul.ok-skills li {
+	list-style: square;
+	display:block;
+	float:none;
+	margin: 0 30pt 0 0;
+}
+ul.ok-skills li+li {
+	border-left:none;
+	padding-left: 0;
+}
+ul.list-no-bullets {
+	margin-top: 0;
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
+}
+ul.list-no-bullets li {
+	list-style:none;
+	margin:8pt 0;
+}
+footer address {
+	padding:2em;
+}
+div#footerSub {
+	display:none;
+}
+#fixednav {
+	width: 100%;
+}
+nav#fixedbar ul#fixednav li.mobileHide {
+	display:none !important;
+}
+/* hide nav */
+#navigation {
+  display: none;
+  width:0;
+  height:0;
+}
+
+
+}
+@media only screen and (max-width: 500px) {
+body {
+    background: url(images/ok.jpg) left top no-repeat fixed;
+	background-size: 185%;
+}
