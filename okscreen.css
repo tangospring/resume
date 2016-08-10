@@ -1,4 +1,3 @@
-@charset "utf-8";
 /*resets need to be done in one css file to facilitate css switching *****************************/
 /* ok reset styles */
 
@@ -74,7 +73,7 @@ img { border: 0; max-width: 100%; }
 
 /****************** backgrounds */
 body {
-    background: url(images/ok.jpg) left top no-repeat fixed, #686051 url(images/okbkg.jpg) repeat;
+    background: url(/images/ok.jpg) left top no-repeat fixed, #686051 url(/images/okbkg.jpg) repeat;
 }
 
 /****************** layout */
