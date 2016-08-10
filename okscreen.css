@@ -73,7 +73,7 @@ img { border: 0; max-width: 100%; }
 
 /****************** backgrounds */
 body {
-    background: url(/images/ok.jpg) left top no-repeat fixed, #686051 url(/images/okbkg.jpg) repeat;
+    background: url(images/ok.jpg) left top no-repeat fixed, #686051 url(images/okbkg.jpg) repeat;
 }
 
 /****************** layout */
