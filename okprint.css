@@ -1,0 +1,254 @@
+@charset "utf-8";
+/*resets need to be done in one css file to facilitate css switching *****************************/
+/* ok reset styles */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt,
+blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, address, article, aside, canvas, details, embed, figure, figcaption, img,
+footer, header, hgroup, menu, nav, output, section, summary, applet, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+	outline: 0;
+    font-size: 100%;
+    font: inherit;
+	font-style:normal;
+    vertical-align: baseline;
+	background: transparent;
+	/* check in print CSS box sizing!!!! */
+	-webkit-text-size-adjust: 100%;
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;	
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+	display: block; 
+}
+:focus {
+	outline: 0;}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;}
+/* setup body */
+body, p {
+    line-height: 1.4;
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+a {
+	text-decoration: none;
+	color: #2e506f;
+}
+/* starting margins */
+p, h1, h2, h3, h4, h5, h6, ol, ul, li, dl, blockquote, address { margin: 12pt; }
+li { margin-left: 2em; }
+
+/* setup headings */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1 { font-size: 300%; font-weight:100; font-style:normal;}
+h2 { font-size: 180%; }
+h3 { font-size: 160%; }
+h4 { font-size: 140%; }
+h5 { font-size: 120%; }
+h6 { font-size: 100%; }
+
+blockquote, q { 
+	quotes: none; 
+}
+blockquote:before, blockquote:after, q:before, q:after { 
+	content: ''; content: none; 
+}
+strong { 
+	font-weight: bold; 
+} 
+pre { font-family: consolas, monospace; }
+img { border: 0; max-width: 100%; }
+
+/*end of resets *****************/
+
+
+
+/* CSS for print layout */
+/*hide navigation and footer  */
+nav, footer, .ok-print-hide {
+	display: none;
+}
+/****************** page margins for print */
+@page {
+	margin: 1cm;
+}
+body {
+	background-color: #E9EDEF;
+}
+.print-page-break	{ 
+	page-break-before: always; 
+}
+tr, img {
+	page-break-inside:avoid;
+}
+/****************** layout */
+.clear {
+	margin: 0;
+    padding: 0;
+    clear: both;
+}
+#align-center {
+	max-width: 570pt;
+	min-width: 570pt;
+	margin: 0 auto;
+	background-color:#FFF;
+}
+header, footer, article {
+	max-width:570pt;
+}
+header hgroup {
+	display:block;
+	width:370pt;
+}
+article.summary section {float:left;
+}
+div.main-content-container {
+	max-width:448pt;
+	float:left;
+}
+div.print-left-margin {
+	margin:0 0 0 122pt;
+}
+div.main-content-container hgroup {
+	width:400pt;
+}
+h1, h1+h4, h2  {float:left;
+}
+figure {
+	float:left;
+	width:105pt;
+	margin:20pt 0 0 17pt;
+}
+aside {
+	float:left;
+	width:105pt;
+	margin:0 0 0 17pt;
+}
+address {
+	float:right;
+	color:#666;
+}
+
+
+/**************** typography */
+h1, h2, h3, h4, h5, h6  {
+	font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+}
+h1 {
+	margin-bottom:0;
+	background:top left no-repeat url(images/view_web.png); 
+}
+h1>a {
+	display: block;
+	padding-top:30pt;
+	color:#000;
+}
+h2 {text-transform:uppercase;
+	font-size: 13pt;
+	font-weight:100;
+	width:110pt;
+	margin-right:0;
+	margin-bottom:0;
+	color:#666;
+}
+h3 {font-weight:100;
+	font-size: 13pt;
+	margin-bottom:5pt;
+	text-transform:uppercase;
+}
+h3 span.exp-years, h4 span.exp-years {
+	font-weight:100;
+	font-size:11pt;
+}
+h4 {display:block;
+	font-size: 10pt;
+	font-weight:100;
+	margin-top: 0;
+	color:#666;
+}
+h1+h4 {
+	margin-top:5pt;
+}
+h5 {
+	font-size: 10pt;
+	font-weight: bold;
+	margin-top: 0; 
+	margin-bottom: 0;
+	color:#666;
+}
+section.okinterests2 {
+	padding-top:10pt;
+}
+article.summary>section>p {
+	margin-top:16pt;
+	line-height:16pt;
+}
+h5+p {margin-top:5pt; 
+	margin-bottom:8pt;
+}
+p 	{margin-bottom:8pt;
+}
+ul {margin-top:5pt;
+}
+li {margin:0 12pt;
+}
+blockquote {
+	font-style: italic;
+	margin:0;
+}
+aside p {
+	margin:5pt 0 8pt 0;
+}
+blockquote+p, figcaption {
+	font-size:9pt;
+	margin:5pt 0 8pt 5pt;
+}
+aside, figcaption {
+	color: #666;
+}
+ul.ok-skills {
+	margin-top:0;
+}
+ul.ok-skills li {
+	list-style:none;
+	display:block;
+	float:left;
+	margin: 0 30pt 0 0;
+}
+dl {
+	margin-bottom:0;
+}
+dl dt { 
+	float: left; 
+	clear: left; 
+	width: 37pt; 
+	text-align:left;
+	color:#666;
+}
+dl dt:after { 
+	content: " — "; 
+} 
+dl dd { 
+	margin: 0 0 0 35pt; 
+	padding: 0 0 1pt 0; 
+}
+dl+p {
+	margin-top:0;
+}
+ul.list-no-bullets {
+	margin-top: 10pt;
+}
+ul.list-no-bullets li {
+	list-style:none;
+	margin-left:0;
+}

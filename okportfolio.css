@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+.clear {
+	margin: 0;
+    padding: 0;
+    clear: both;
+}
+.floatRight {
+	float:right;
+}
+.floatLeft {
+	float:left;
+}
+.okdestopHide {
+	display:none;	
+}
+a {
+	color:#509bd6;
+}
+a:hover {
+	color:#57a9e9;
+}
+a.okLinkHead  {
+	color: #e1e3df; 
+}
+a.okLinkHead:hover {
+	color: #fff; 
+}
+body {
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color:#fff;
+	background:#5a5a61;
+}
+h1 a {
+	color: #fff;
+}
+h1 a:hover {
+	color: #efb9b2;
+}
+/************* head */
+header {
+	color: #fff; 
+	padding:0 0 3em 0;
+	border-bottom:dotted thin #666;
+	background:#33333a;
+}
+
+footer {
+	color: #fff; 
+	margin-top:100px;
+	padding:0;
+	border-top:dotted thin #2e506f;
+	background: #33333a;
+}
+footer div {
+	padding:300px 0 0;
+	text-align:center;
+	color:#cb422f;
+	letter-spacing:0.2em;
+}
+address {
+	text-align:center;	
+	margin: 0;
+	min-width:200px;
+}
+address ul {
+	text-align: center;
+	margin:0;
+	text-align:center;	
+	list-style: none outside none;
+	background: #cb422f;
+}
+address ul li {
+	margin: 0 1em;
+	display: inline; 
+	white-space: nowrap;
+}
+div#okhead {
+	margin:20px auto 0;
+	text-align: center;
+}
+div.okheadImg {
+	display:inline-block;	
+	width: 234px;
+    height: 234px;
+	border-radius:50%;
+	background:url(images/okcrop.jpg);
+	box-shadow: inset 2px 2px 8px 2px rgba(40,44,48,0.2);
+	-moz-box-shadow: inset 2px 2px 8px 2px rgba(40,44,48,0.2);
+	-webkit-box-shadow: inset 2px 2px 8px 2px rgba(40,44,48,0.2);
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+div.okheadImg:hover {
+	background:url(images/okviewResume.png),url(images/okcrop.jpg);
+	box-shadow:2px 2px 5px #333;
+	-moz-box-shadow:2px 2px 5px #333;
+	-webkit-box-shadow:2px 2px 5px #333;
+}
+
+/* typography */
+h1, h2, h3, h4, h5, h6, address, #fixednav li, hr, .okProjectSummary {
+	font-family: 'Quicksand', Helvetica Neue, Arial, Helvetica, sans-serif;
+}
+address ul li, h1, h2, h3 {
+	letter-spacing:0.2em;	
+}
+h1 {	
+	font-size:3em; 
+	font-weight:100;
+	margin:30px 0 0 0;
+}
+h2 {
+	color:#cb422f;
+	font-size:2em;
+	font-weight: normal;
+	letter-spacing:0;
+}
+h2+h1 {
+	margin:0;
+}
+h3, h5 {
+	max-width:890px;
+	margin:0.5em auto 0;
+	text-align:center;
+	padding:0;
+	font-size:2em; 
+	font-weight:normal;
+    line-height: 1.4;
+	color:#999;	
+}
+h3#pConfiguresoft, h3#pElinear {
+	padding-bottom:2em;
+} 
+h4 {
+	max-width:890px;
+	margin:1.2em auto 0;	
+	text-align:center;
+	padding:0;
+	font-size:3.5em; 
+    letter-spacing:0.05em;
+	font-weight:400;
+	font-variant:small-caps;	
+}
+h4, h5 {
+    color:#fff;	
+}
+h4#pPersonal {
+	padding-bottom:1em;
+}
+h6 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #ccc;
+}
+.nowrap {
+	white-space:nowrap;	
+}
+/* project separators */
+hr { 
+    margin-top:100px;
+    padding: 0; 
+    border: none; 
+    border-top: medium double #999; 
+    color: #999; 
+    text-align: center; 
+} 
+hr.subproject {
+    border-top: 1px dashed #ccc; 
+    margin-bottom: 65px;
+}
+hr:after { 
+    content: "☉"; 
+    display: inline-block; 
+    position: relative; 
+    top: -0.1em; 
+    font-size: 3em; 
+    padding: 0 0.5em; 
+    line-height: 0.1;
+    color:#999;
+    background: #5a5a61; 
+}
+hr.year2016:after {
+    content: "2016";
+}
+hr.year2015:after {
+    content: "2015";
+}
+hr.year2014:after {
+    content: "2014";
+}
+hr.year2008-2012:after {
+    content: "2008-2012";
+}
+hr.year2001-2005:after {
+    content: "2001-2005";
+}
+hr.year1999-2001:after {
+    content: "1999-2001";
+}
+hr.year1998-2004:after {
+    content: "1998-2004";
+}
+
+.okProjectSummary {
+    width: auto;
+    max-width:780px;
+    margin:35px auto 15px;
+    padding:30px 20px 15px;
+    color:#ccc;
+    border-top:thin solid #868686;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 1px;   
+}
+/*  project container */
+.okPproject {
+	margin:0 auto;
+	max-width:890px;
+}
+.okProjectContribution {
+    width: auto;
+    max-width:780px;
+    margin:60px auto;
+}
+.okProjectContribution p {
+    margin:0 auto;
+    max-width: 640px;
+    padding:0 20px;
+    font-size:1.2em;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    color: #ccc;
+}
+.okWebsiteSymbol {
+    font-size:2em;
+    vertical-align:middle;
+    line-height: .1;
+	color:#ff9384;	
+}
+/* slide chrome override */
+.bx-wrapper .bx-viewport {
+    box-shadow: 0 0 5px #ededed;
+    border: 5px solid #88878d;
+    border-radius:6px;
+    background: #88878d;
+}
+/* in-slide description override */
+.bx-wrapper .bx-caption {
+    visibility:hidden;
+}
+
+/* hidden fixed navigation, see http://designshack.net/articles/javascript/simple-steps-for-creating-a-fixed-navigation-bar/  */
+#fixedbar {
+  display: none;
+  position: fixed;
+  bottom:0;
+  right:0;
+  width: 40px;
+  height: 40px;
+  margin:0 30px 40px 0;
+  text-align:center;
+  z-index:10;
+}
+a#okPtop  {
+	display:inline-block;
+	font-size: 30pt;
+	line-height:0.2em;
+	padding:0.37em 0.35em 0.53em 0.4em;	
+	margin:0;
+	color: #fff; 
+	border-radius:50%;
+	background: rgba(51,51,51,0.5);
+	-ms-transform:rotate(270deg);
+	-webkit-transform:rotate(270deg);
+	-o-transform:rotate(270deg);
+	-moz-transform:rotate(270deg);
+	-webkit-transform:rotate(270deg);	
+	-webkit-transition: all 0.2s linear;
+  	-moz-transition: all 0.2s linear;
+  	transition: all 0.2s linear;
+}
+a#okPtop:hover { 
+	color: #cb422f; 
+	background: rgba(51,51,51,1);
+}
+
+/* =============== mobile ============== */
+
+@media only screen and (max-width: 800px) {
+.okmobileHide {
+	display:none;	
+}
+.okdestopHide {
+	display:inline-block;	
+}
+n av#fixedbar a#okPtop {
+	display:none;
+}
+header {
+	padding:0 0 15px 0;
+	margin:0;
+}
+div#okhead {
+	margin:0 20px 20px 25px;
+	text-align:left;
+}
+div.okheadImg {	
+	float:left;
+	margin-right:20px;	
+	width: 70px;
+    height: 70px;
+	border-radius:50%;
+	background:url(images/OKcrop70.jpg);
+	box-shadow: inset 2px 2px 8px 2px rgba(40,44,48,0.2);
+	-moz-box-shadow: inset 2px 2px 8px 2px rgba(40,44,48,0.2);
+	-webkit-box-shadow: inset 2px 2px 8px 2px rgba(40,44,48,0.2);
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+div.okheadImg:hover {
+	background:url(images/OKcrop70.jpg);
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+div.okheadHeading {
+	width:70%;
+	float:left;
+}
+h1 {
+	font-size:2.5em; 
+	font-weight: normal;
+	letter-spacing:0.1em;
+	line-height:0.9em;
+	margin:-0.1em;
+	padding:0 0 0.1em 0;
+}
+h2 {
+	color:#efb9b2;
+	font-size:1.5em;
+	font-weight: normal;
+	letter-spacing:0;
+	margin:0;
+}
+h2+h1 {
+	font-size:1.5em;
+	margin:0.1em 0 0;
+}
+h3 {
+	font-size:1.5em;
+}
+h4 {
+	font-size:2.5em; 
+	font-weight:normal;	
+}
+hr { 
+    margin-top:60px;
+} 
+hr:after { 
+    line-height: 0.2;
+    font-size: 2em; 
+}
+hr.subproject {
+    margin-bottom: 50px;
+}
+hr.subproject:after {
+    font-size: 2.5em;
+    top: -0.1em;   
+    padding: 0 0.2em; 
+    }
+address ul li, h1, h2, h3, h4, footer div {
+	letter-spacing:0.1em;	
+}
+.okProjectSummary {
+    margin:0 auto 15px;
+    padding:20px 20px 15px;
+    border-top:none;  
+    text-align: left;
+}
+    
+}
