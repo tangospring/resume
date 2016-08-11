@@ -269,7 +269,7 @@ a#okPtop  {
 	display:inline-block;
 	font-size: 30pt;
 	line-height:0.2em;
-	padding:0.37em 0.35em 0.53em 0.4em;	
+	padding:0.37em 0.35em 0.55em 0.4em;	
 	margin:0;
 	color: #fff; 
 	border-radius:50%;
@@ -337,7 +337,7 @@ h1 {
 	font-weight: normal;
 	letter-spacing:0.1em;
 	line-height:0.9em;
-	margin:-0.1em;
+	margin:0 -0.1em;
 	padding:0 0 0.1em 0;
 }
 h2 {
@@ -362,8 +362,9 @@ hr {
     margin-top:60px;
 } 
 hr:after { 
-    line-height: 0.2;
+    line-height: 1;
     font-size: 2em; 
+    top: -0.55em;   
 }
 hr.subproject {
     margin-bottom: 50px;
@@ -382,5 +383,11 @@ address ul li, h1, h2, h3, h4, footer div {
     border-top:none;  
     text-align: left;
 }
+    
+}
+@media only screen and (max-width: 360px) {
+    h1 {
+        margin-top:0.5em;
+    }
     
 }
