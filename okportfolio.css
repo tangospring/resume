@@ -79,7 +79,7 @@ div#okhead {
 	margin:20px auto 0;
 	text-align: center;
 }
-div.okheadImg {
+div.okheadimg {
 	display:inline-block;	
 	width: 234px;
     height: 234px;
@@ -92,7 +92,7 @@ div.okheadImg {
 	-moz-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
-div.okheadImg:hover {
+div.okheadimg:hover {
 	background:url(images/okviewResume.png),url(images/okcrop.jpg);
 	box-shadow:2px 2px 5px #333;
 	-moz-box-shadow:2px 2px 5px #333;
@@ -307,13 +307,13 @@ div#okhead {
 	margin:0 20px 20px 25px;
 	text-align:left;
 }
-div.okheadImg {	
+div.okheadimg {	
 	float:left;
 	margin-right:20px;	
 	width: 70px;
     height: 70px;
 	border-radius:50%;
-	background:url(images/OKcrop70.jpg);
+	background:url(images/okcrop70.jpg);
 	box-shadow: inset 2px 2px 8px 2px rgba(40,44,48,0.2);
 	-moz-box-shadow: inset 2px 2px 8px 2px rgba(40,44,48,0.2);
 	-webkit-box-shadow: inset 2px 2px 8px 2px rgba(40,44,48,0.2);
@@ -321,8 +321,8 @@ div.okheadImg {
 	-moz-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
-div.okheadImg:hover {
-	background:url(images/OKcrop70.jpg);
+div.okheadimg:hover {
+	background:url(images/okcrop70.jpg);
 	box-shadow:none;
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
