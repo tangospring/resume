@@ -49,11 +49,13 @@ footer {
 	color: #fff; 
 	margin-top:100px;
 	padding:0;
+    text-align: center;
 	background:url(images/portbkg01.png) #33333a;
 }
 footer div {
-    margin-top:300px;
-	padding:0 0;
+    display: inline-block;
+    margin:300px auto 0;
+	padding:0 4px;
 	text-align:center;
 	color:#cb422f;
 	letter-spacing:0.2em;
@@ -241,7 +243,7 @@ hr.year1998-2004:after {
     line-height: .1;
 	color:#ff9384;	
 }
-/* slide chrome override */
+/* slide chrome styles override */
 .bx-wrapper .bx-viewport {
     box-shadow: 0 0 5px #ededed;
     border: 5px solid #88878d;
