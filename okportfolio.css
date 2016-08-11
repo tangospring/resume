@@ -41,22 +41,23 @@ h1 a:hover {
 header {
 	color: #fff; 
 	padding:0 0 3em 0;
-	border-bottom:dotted thin #666;
-	background:#33333a;
+	border-bottom:solid 20px #2e2e36;
+	background:url(images/portbkg01.png) #33333a;
 }
 
 footer {
 	color: #fff; 
 	margin-top:100px;
 	padding:0;
-	border-top:dotted thin #2e506f;
-	background: #33333a;
+	background:url(images/portbkg01.png) #33333a;
 }
 footer div {
-	padding:300px 0 0;
+    margin-top:300px;
+	padding:0 0;
 	text-align:center;
 	color:#cb422f;
 	letter-spacing:0.2em;
+    background: #2e2e36;
 }
 address {
 	text-align:center;	
