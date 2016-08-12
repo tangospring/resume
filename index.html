@@ -1,298 +1,445 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Oleh Kovalchuke. Interation design portfolio.</title>
+<link href="images/ok.ico" rel="shortcut icon" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='http://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
 <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" media="screen, projection, not print" href="okscreen.css" />
-<link rel="stylesheet" type="text/css" media="print" href="okprint.css" />
-<title>Oleh Kovalchuke. User Experience Designer. Resume.</title>
-<link href="images/ok.ico" rel="shortcut icon" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link href="reset.css" rel="stylesheet" type="text/css" media="all" /> 
+
+<!-- jQuery library for bxslider - image sliders -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="lib/jquery.bxslider.css" rel="stylesheet" />
+
+<link href="okportfolio.css" rel="stylesheet" type="text/css" />    
 </head>
 
-<body> 
+<body>
 <nav id="fixedbar">
-  <ul id="fixednav">
-    <li><a href="#top"><img src="images/ok.jpg" alt="Navigate to top" height="70px" width="120px" /></a></li>
-    <li class="mobileHide"><a href="#summary">Summary</a></li>
-    <li class="mobileHide"><a href="#experience">Experience</a></li>
-    <li class="mobileHide"><a href="#education">Education</a></li>
-    <li class="mobileHide"><a href="#misc">Misc.</a></li>
-    <li class="mobileHide"><a href="#top" class="oknavPrint" rel="okprint.css">Print</a></li>
-    <li><a href="okportfolio.html" class="oknavPortfolio">Portfolio</a></li>
-  </ul>
+<a href="#top" id="okPtop">&rsaquo;</a>
 </nav>
-<div id="align-center">
-  <header>
-    <address>
-    <a href="tel:8168086177" title="Call">(816) 808-6177</a><br/>
-    <a href="mailto:tangospring@gmail.com?Subject=Your%20resume" title="Send email">tangospring@gmail.com</a><br/>
-    <a>Kansas City, MO</a>
-    </address>
-    <hgroup>
-      <h1><a href="#" class="oknavPrint" id="okmaskLink"  target="_top" rel="okscreen.css">Oleh Kovalchuke</a></h1>
-      <h4>User Exprience Designer</h4>
-    </hgroup>
-  </header>
-  <div class="clear"></div>
-  <nav id="navigation">
-    <ul>
-      <li id="summary"><a>&nbsp;</a></li>
-      <li><a href="#summary">Summary</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#misc">Misc.</a></li>
-      <li><a href="#top" class="oknavPrint" rel="okprint.css">Print</a></li>
-      <li><a href="okportfolio.html" class="oknavPortfolio">Portfolio</a></li>
-    </ul>
-  </nav>
-  <div class="clear"></div>
-  <article class="summary">
-    <h2 class="ok-print-hide">Summary</h2>
-    <section>
-      <p>Fifteen years of web, web-based application, and software design experience. <br />
-      	Generalist with focus in interaction design.<br />
-        Gathered requirements, conducted contextual interviews, built user profiles, defined application workflows, created visual styles, templates and finished designs, conducted usability evaluations.</p>
 
-    </section>
-    <div class="clear ok-screen-hide"></div>
-    <section>
-      <h5>Key&nbsp;Areas&nbsp;of&nbsp;Expertise</h5>
-      <ul>
-        <li>Interaction design</li>
-        <li>Usability evaluations</li>
-        <li>Visual design</li>
-      </ul>
-    </section>
-    <section>
-      <h5>Interests</h5>
-      <ul>
-        <li>Human-centered design</li>
-        <li>Behavioral psychology</li>        
-        <li>Gamification</li>
-      </ul>
-    </section>
-    <section class="okinterests2">
-      <ul>
-        <li>Cognition</li>
-        <li>Information visualization</li>
-        <li>Mobile design</li>
-      </ul>
-    </section>
+<header>
+	<address>
+		<ul>
+		  <li><a class="okLinkHead" href="tel:8168086177" title="Call">(816)808-6177</a></li>
+		  <li><a class="okLinkHead" href="mailto:tangospring@gmail.com?Subject=Your%20resume" title="Send email">tangospring@gmail.com</a></li>		  
+		</ul>
+        <br class="clear" />
+	</address>
+	<div id="okhead"> 
+		<a href="okresume.html" title="View resume">
+  		<div class="okheadimg">&nbsp; </div>
+  		</a>
+        <div class="okheadHeading">
+  		<h1><a class="okLinkHead" href="okresume.html" title="View resume">Oleh Kovalchuke</a></h1>
+  		<h2>User Experience Designer</h2>
+        <h1>Portfolio</h1>
+        </div>
+	</div>
     <br class="clear" />
-  </article>
-  <div class="clear"></div>
-  <article id="experience">
-    <h2>Experience</h2>
+</header>
+
+<hr class="year2016"/>
     
-    <div class="main-content-container">
-		<div class="ok-two-column">
+ <article>
+  <h4>I Got Mine in KC</h4>
+  <section class="okProjectSummary">Website for Kansas City, MO Health Department. STD prevention.</section>
+  <section class="okPproject">
+<ul id="igot">
+  <li><img src="images/igot02.png" title="Website: Navigation, Map, Info Cards" /></li>
+  <li><img src="images/igot03.png" title="Website: Events Carousel, Quiz" /></li>
+  <li><img src="images/igot04.png" title="Mobile site: Navigation, Map, Events" /></li>
+  <li><img src="images/igot05.png" title="Mobile site: Treatment Center card, STD card (front and back)" /></li>
+  <li><img src="images/igot06.png" title="Mobile site: Quiz, Footer" /></li>
+</ul>
+  <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Project management, layout, mockups, visual design, logo, icons, photography, HTML/CSS code, usability evaluation (<span class="okWebsiteSymbol">&#9758;</span> <a href="http://igotmineinkc.org" target="new">view website</a>).</p>  
+  </section>         
+  </section>
+</article>
 
-    	  <hgroup class="ok-company">
-     	   <h3>Code for KC <span class="exp-years">&#8211; current</span></h3>
-      	   <h4>User Experience Architect</h4>
-    	  </hgroup>
-    	  <div class="experience-bkg">
-    	    <section>
-    		   <ul class="list-img-bullet">
-                  <li>Suggested and designed <em>Code for America Projects Hub</em>, web application facilitating volunteer participation in civic hacking. </li>
-                  <li>Led volunteer efforts in implementation of the project.</li>
-               </ul>					
-    	    </section>		
-   		  </div>
-      	</div>
-        
-		<div class="ok-two-column">
+<hr class="year2015"/>   
+      
+ <article>
+  <h4>People Hub</h4> 
+  <section class="okProjectSummary">Gamified app to acknowledge and to reward contributions of Code for America brigade members, to encourage team collaboration</section>
+  <section class="okPproject">
+<ul id="ph">
+  <li><img src="images/ph03.png" title="Wireframe: Project Team Journey" /></li>
+  <li><img src="images/ph01.png" title="Wireframe: Player Journey 1/2" /></li>
+  <li><img src="images/ph02.png" title="Wireframe: Player Journey 2/2" /></li>
+</ul> 
+  <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Concept, objectives, player profiles, target behaviors, activity loops, PBL framework, wireframes (<span class="okWebsiteSymbol">&#9758;</span> <a href="https://github.com/codeforkansascity/People-Hub" target="new">view gamification framework description on GitHub</a>).</p>  
+  </section>          
+  </section>
+</article>
+    
+<hr class="year2015"/>    
+    
+<article>
+  <h4>Code for America</h4>
+  <section class="okProjectSummary">Project management app for Code for America brigade</section>  
+  <section class="okPproject">
+<ul id="pcfa">
+  <li><img src="images/pcfa01.png" title="Projects Hub, web app" /></li>
+  <li><img src="images/pcfa02.png" title="Project card wireframe" /></li>
+  <li><img src="images/pcfa03.png" title="Wireframes: Submit Idea form, Project Page" /></li>
+  <li><img src="images/pcfa04.png" title="Submit Idea form, Project Page" /></li>
+  <li><img src="images/pcfa05.png" title="Mobile layout" /></li>
+</ul>
+  <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Concept, goals, user profiles, task definition, workflow, user stories, mockups, visual design, HTML/CSS prototype.</p>  
+  </section>         
+  </section>
+</article>
 
-    	  <hgroup class="ok-company">
-     	   <h3>House of Reporting <span class="exp-years">&#8211; current</span></h3>
-      	   <h4>Creative Director / Videographer</h4>
-    	  </hgroup>
-    	  <div class="experience-bkg">
-    	    <section>
-    		   <ul class="list-img-bullet">
-                  <li>Started legal videography service for the company: video and audio editing, video production.</li>
-                  <li>Designed and developed <a href="http://houseofreporting.com" title="View website">corporate website</a></li>
-                  <li>Conceptualized new identity and brand (logo, print materials).</li>
-               </ul>
-    	    </section>		
-   		  </div>
-      	</div>
-        
-        <br class="clear" />
+<hr class="year2015"/>  
+    
+ <article>
+  <h4>Digital Inclusion</h4>
+  <section class="okProjectSummary">Free digital services in Kansas City
+  </section>
+  <section class="okPproject">
+<ul id="di">
+  <li><img src="images/di02.png" title="Wireframe of desktop website" /></li>
+  <li><img src="images/di03.png" title="Mobile website" /></li>
+  <li><img src="images/di01.png" title="Mobile site navigation" /></li>
+</ul>
+    <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Goals, user needs, user tasks, wireframes.</p>  
+  </section>
+  </section>
+</article>
+    
+<hr class="year2014"/>     
 
-      <hgroup class="ok-company">
-        <h3>DST Systems <span class="exp-years">&#8211; 2008-2012</span></h3>
-        <h4>Interaction Designer / Human Factors Engineer</h4>
-      </hgroup>
-      <div class="experience-bkg">
-        <section class="exp-dst">
-          <h5>Interaction Design</h5>
-          <p>Conducted contextual interviews; analyzed task workflow, frequency and importance; built wireframes. Human Factors consultant and supervisor on fourteen software design projects for three products, including <em>CompRecon</em> (web application), <em>Web Portfolio Manager</em> (website), and <em>Advanced Loans</em> (software application). </p>
-        </section>
-        <section class="exp-dst">
-          <h5>Design Standards</h5>
-          <p>Created and maintained <em>Visual Index of Components Used in Forms</em> &#8211; standard styles and patterns for software and website forms. Led company-wide discussion group of software design patterns. Summarized results in corporate wiki. Provided guidance on use of software  design patterns and components.</p>
-        </section>
-        <section class="exp-dst">
-          <h5>Usability</h5>
-          <p>Conducted heuristic evaluations and usability tests (lab).</p>
-        </section>
-        <br class="clear" />
-      </div>
-      <hgroup class="ok-company, NoBottomWhiteSpace">
-        <h3>Configuresoft <span class="exp-years">&#8211; 2001-2005</span></h3>
-        <h4>User Experience Architect / Interaction Designer / Usability Engineer <span class="exp-years">&#8211; 2003-2005</span></h4>
-      </hgroup>
-    </div>
-    <br class="clear" />
-    <aside>
-      <blockquote>Extremely easy to use, it also has the power and functionality to manage even the largest network</blockquote>
-      <p>SC magazine about <em>Enterprise Configuration Manager</em></p>
-    </aside>
-    <div class="main-content-container">
-      <section>
-        <h5>Interaction Design</h5>
-        <p>In charge of defining the architecture and prototyping the task-based interface for <em>Enterprise Configuration Manager</em> — a web-based enterprise computer management application. Architect responsible for the creation of a conceptually new application module. Responsible for definition of user tasks, generation of user interface taxonomy.</p>
-        <p>Defined and created style guides and prototypes. In charge of creation of workflow diagrams, wireframes, conceptualization and implementation of UI graphics and HTML templates.</p>
-        <h5>Usability</h5>
-        <p>Responsible for usability studies, contextual interviews. Composed user questionnaires, analyzed user profiles to build a matrix of the most common and valuable user tasks.</p>
-      </section>
-    </div>
-    <br class="clear, print-page-break" />
-    <div class="experience-bkg">
-      <div class="main-content-container, print-left-margin">
-        <hgroup id="jobTitleInsert">
-          <h4>Creative Director, Visual Designer / Web Developer <span class="exp-years">&#8211; 2001-2003</span></h4>
-        </hgroup>
-        <section class="NoBottomWhiteSpace">
-          <h5>Software Design</h5>
-          <p>Designer in charge of prototypes for all screens of <em>Enterprise Configuration Manager</em>. Designer and producer of all graphics and styles used in the application. Supervisor of development of workflow for the application module. Key contributor to transition to the new, web-based version of the product.</p>
-        </section>
-      </div>
-      <br class="clear">
-      <aside>
-        <p>Redesigned website increased new user registration by 600%.</p>
-      </aside>
-      <div class="main-content-container">
-        <section class="NoTopWhiteSpace">
-          <h5>Corporate Website</h5>
-          <p>Designer in charge of redesign and maintenance of company website (architecture, information flow, navigation, page layouts, visual concept, all graphics, Flash and Gif animations, coding, content updates etc.) and for all web marketing materials (ads, virtual exhibits).</p>
-        </section>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <div class="main-content-container, print-left-margin">
-      <hgroup class="ok-company">
-        <h3>eLinear <span class="exp-years">&#8211; 1999-2001</span></h3>
-        <h4>Web Designer | Web Design Lead</h4>
-      </hgroup>
-      <section>
-        <p>Created templates for 20 websites and web applications. Gathered client requirements. Developed site architecture, created visual designs, logos, GIF animations, HTML templates and illustrations.</p>
-      </section>
-      <hgroup class="ok-company">
-        <h3>CU Boulder <span class="exp-years">&#8211; 1996-1999</span></h3>
-        <h4>Postdoctoral Research Associate (Molecular Biology)</h4>
-      </hgroup>
-      <section>
-        <p>Design-related projects: design and maintenance of <em>Windows Reference</em> and personal websites.</p>
-      </section>
-    </div>
+<article>
+  <h4>House of Reporting</h4>
+  <section class="okProjectSummary">Website and print materials for court reporting company
+  </section>
+  <section class="okPproject">
+<ul id="phr">
+  <li><img src="images/phr02.png" title="Responsive website" /></li>
+  <li><img src="images/phr03.png" title="Mobile website" /></li>
+  <li><img src="images/phr04.png" title="Business cards" /></li>
+  <li><img src="images/phr05.png" title="DVD labels" /></li>
+  <li><img src="images/phr06.png" title="DVD menu" /></li>  
+  <li><img src="images/phr01.png" title="Logo design" /></li>
+</ul>
+    <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Goals, information architecture, service design, workflow, mockups, visual design, logo, HTML/CSS code (<span class="okWebsiteSymbol">&#9758;</span>  <a href="http://houseofreporting.com" target="new">view website</a>).</p>
+    </section> 
+  </section>
+</article>
+
+<hr class="year2014"/>     
+
+<article>
+  <h4>EchoGrade</h4>
+  <section class="okProjectSummary">Grading app for high school teachers
+  </section>
+  <section class="okPproject">
+<ul id="eg">
+  <li><img src="images/eg06.png" title="Storyboards" /></li>  
+  <li><img src="images/eg07.png" title="Persona analysis" /></li>
+  <li><img src="images/eg05.png" title="Screen sketches" /></li>
+  <li><img src="images/eg01.png" title="Mockups, Workflow" /></li>
+  <li><img src="images/eg02.png" title="Mockups, Workflow" /></li>
+  <li><img src="images/eg03.png" title="Mockups, Workflow" /></li>
+  <li><img src="images/eg04.png" title="Mockups, Workflow" /></li>
+  <li><img src="images/eg08.png" title="Logo" /></li>
+</ul>
+    <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Personas, goals, task definition, workflow, sketches, storyboards, mockups, visual design, logo design.</p>
+    </section> 
+  </section>
+</article>
+
+<hr class="year2008-2012"/>  
+
+<article>  
+  <h4>DST Systems</h4>
+  <h5>Financial Website</h5>
+  <section class="okProjectSummary">Website for financial advisors
+  </section>
+  <section class="okPproject"> 
+ <ul id="pdpm">
+  <li><img src="images/pdpm05.png" title="Details of one of the items" /></li>
+  <li><img src="images/pdpm06.png" title="Details for all items" /></li>
+  <li><img src="images/pdpm07.png" title="Trade projection" /></li>
+  <li><img src="images/pdpm08.png" title="History chart and data" /></li>
+  <li><img src="images/pdpm01.png" title="Main screen" /></li>
+  <li><img src="images/pdpm02.png" title="Chart details" /></li>
+  <li><img src="images/pdpm03.png" title="List of large trades" /></li>
+  <li><img src="images/pdpm04.png" title="Trade details" /></li>
+  <li><img src="images/pdpm09.png" title="List of portfolios" /></li>
+  <li><img src="images/pdpm10.png" title="Edit portfolio list" /></li>
+  <li><img src="images/pdpm11.png" title="Add new portfolio" /></li>
+  <li><img src="images/pdpm12.png" title="User profiles" /></li>
+</ul>  
+    <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Interviews, user profiles, task analysis, workflow, design concept, wireframes.</p>
+    </section>       
+  </section>
+    
+<hr class="subproject" />   
+    
+  <h5>Design Standards and Patterns</h5>
+  <section class="okProjectSummary">Reference website
+  </section>
+  <section class="okPproject">
+<ul id="pdst">
+  <li><img src="images/pdst01.png" title="Index of entries" /></li>
+  <li><img src="images/pdst02.png" title="Error correction" /></li>
+  <li><img src="images/pdst03.png" title="Data grid formatting" /></li>
+  <li><img src="images/pdst04.png" title="Form layout" /></li>
+</ul>      
+    <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Concept, patterns, pattern design, website design, code (HTML, CSS).</p>
+    </section> 
+  </section>
+
+<hr class="subproject" />       
+
+  <h5>Fund Trade Comparison and Reconciliation</h5>
+  <section class="okProjectSummary">Desktop app used daily by trained operators
+  </section>
+  <section class="okPproject">
+  <ul id="pdcr">
+  <li><img src="images/pdcr03.png" title="Main screen" /></li>
+  <li><img src="images/pdcr02.png" title="Task panel" /></li>
+  <li><img src="images/pdcr06.png" title="Dialog: Advanced search" /></li>
+  <li><img src="images/pdcr04.png" title="Dialog: Item detail" /></li>
+  <li><img src="images/pdcr05.png" title="Dialog: Grid column setup" /></li>
+</ul>  
+    <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Task flow analysis, interaction design, layout, visual design.</p>
+    </section> 
+  </section>
+
+<!-- old markup 
+  <article class="okPproject">  
+  <h5>Batch Tax Processing (an example of guided workflow)</h5>
+ 
+<ul id="pdtp">
+  <li><img src="images/pdtp01.png" title="1. Initial screen" /></li>
+  <li><img src="images/pdtp02.png" title="2. Add new container item" /></li>
+  <li><img src="images/pdtp03.png" title="3. New container" /></li>
+  <li><img src="images/pdtp04.png" title="4. Container is filled" /></li>
+  <li><img src="images/pdtp05.png" title="5. Multiple items updated" /></li>
+  <li><img src="images/pdtp06.png" title="Option setup" /></li>
+</ul> 
+ 
+   <dl class="okPprojectDescr">
+      <dd class="okPprojectSummary">Wireframe of application to be used once a year by trained operators.</dd>
+      <dt>Contribution:</dt>
+      <dd>Task flow analysis, concept, interaction design, layout, wireframes</dd>
+    </dl>
   </article>
-  <div class="clear"></div>
-  <article id="education">
-    <h2>Continuing Education</h2>
-    <div class="main-content-container">
-      <section>
-        <dl>
-          <dt>2012</dt>
-          <dd>Gamification. University of Pennsylvania, Coursera online course (95.3%).</dd>
-          <dt>2009</dt>
-          <dd>Interaction Design Practicum. Cooper University, San Francisco</dd>
-          <dt>2004</dt>
-          <dd>Usability Bootcamp. Bentley College, Boston</dd>
-        </dl>
-        <p>Numerous books on interaction design, usability and information visualization. Lynda.com.</p>
-      </section>
-    </div>
-  </article>
-  <div class="clear"></div>
-  <article id="misc">
-    <h2>Miscellaneous</h2>
-    <div class="main-content-container">
-      <section>
-        <ul class="list-no-bullets">
-          <li>Member of Interaction Designer Association (IxDA)</li>
-          <li>Industry Experience: Software, Web, Biotech, Financial, Education</li>
-          <li>Degree: 1992 PhD, Molecular Biology (Institute of Molecular Biology, Kyiv, Ukraine)</li>
-          <li>Postdoctoral research: Medical College of Wisconsin (Milwaukee) and University of Colorado (Boulder)</li>
-          <li>Hobbies: videography, Argentine tango, improv, yoga, crossfit</li>
-        </ul>
-      </section>
-    </div>
-  </article>
-  <div class="clear"></div>
-  <footer>
-    <address>
-        Oleh Kovalchuke<br />
-    <a href="tel:8168086177" title="Call">(816) 808-6177</a><br/>
-    <a href="mailto:tangospring@gmail.com?Subject=Your%20resume" title="Send email">tangospring@gmail.com</a><br/>
-    <a>Kansas City, MO</a>
-    </address>  
-  <div id="okwufooMessage">
-      <div id="wufoo-z10zfco80795ois">
 
-</div>
-<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;"></div>
-<script type="text/javascript">var z10zfco80795ois;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'tangospring',
-'formHash':'z10zfco80795ois',
-'autoResize':true,
-'height':'519',
-'async':true,
-'host':'wufoo.com',
-'header':'show',
-'ssl':true};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { z10zfco80795ois = new WufooForm();z10zfco80795ois.initialize(options);z10zfco80795ois.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
-  </div>
-  
+  <br class="clear" />
+-->
+    
+<hr class="subproject" />       
+
+  <h5>Shareholder Account Summary</h5>
+  <section class="okProjectSummary">Desktop app used daily by trained operators
+  </section>
+  <section class="okPproject">
+<ul id="pdsd">
+  <li><img src="images/pdsd02.png" title="History panel expanded" /></li>
+  <li><img src="images/pdsd01.png" title="Main screen" /></li>
+  <li><img src="images/pdsd03.png" title="Search box behavior" /></li>
+  <li><img src="images/pdsd04.png" title="Multiple search results" /></li>
+</ul> 
+    <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Contextual interviews, existing application review, task flow analysis, wireframes.</p>
+    </section> 
+  </section>
    
-    <br class="clear" />
+<hr class="subproject" />       
 
-  </footer>
-</div>
-<!-- fixed floating nav menu, also needs jQuery reference script from Google in the head, 640 is page height scroll, after which the nav bar appears  --> 
+  <h5>Usability</h5> 
+  <section class="okProjectSummary">A sample of usability evaluation work
+  </section>
+  <section class="okPproject">  
+<ul id="pdus">  
+  <li><img src="images/pdus04.png" title="Tested screen" /></li>
+  <li><img src="images/pdus02.png" title="Usability scenario" /></li>
+  <li><img src="images/pdus01.png" title="Methodology" /></li>
+  <li><img src="images/pdus03.png" title="Observations" /></li>
+  <li><img src="images/pdus05.png" title="Test results" /></li>
+</ul>   
+    <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Test setup (scenarios, tasks), observations, analysis.</p>
+    </section> 
+  </section>
+
+<hr class="year2001-2005"/>     
+
+<article>
+  <h4>Configuresoft</h4>
+  <section class="okProjectSummary">Web app and corporate website
+  </section>
+  <section class="okPproject">  
+<ul id="pc">
+  <li><img src="images/pc04.png" title="Job Manager: Wireframe" /></li>
+  <li><img src="images/pc05.png" title="Job Manager: Wireframe" /></li>
+  <li><img src="images/pc03.png" title="Job Manager: Concept" /></li>
+  <li><img src="images/pc01.png" title="Web application" /></li>
+  <li><img src="images/pc02.png" title="Corporate website" /></li>
+</ul>   
+    <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Observations, requirement gathering, user profiles, task analysis, wireframes, HTML templates, icon design, visual design, usability evaluation.</p>
+    </section> 
+  </section>
+
+<hr class="year1999-2001"/>     
+
+<article>
+  <h4>eLinear</h4>
+  <section class="okProjectSummary">Website templates for content management system
+  </section>
+  <section class="okPproject">   
+<ul id="pe">
+  <li><img src="images/pe03.png" title="Content Management System" /></li>
+  <li><img src="images/pe01.png" title="IBM Printing Systems" /></li>
+  <li><img src="images/pe05.png" title="eLinear" /></li>
+  <li><img src="images/pe02.png" title="Athletic Link" /></li>
+  <li><img src="images/pe04.png" title="Worlds Above" /></li>
+</ul>  
+    <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>Site architecture, visual design, logo design, HTML templates, illustrations, GIF animations.</p>
+    </section> 
+  </section>
+
+<hr class="year1998-2004"/>     
+
+<article>
+  <h4>Personal Projects</h4>
+  <section class="okProjectSummary">Various websites
+  </section>
+  <section class="okPproject">   
+<ul id="pp">
+  <li><img src="images/pp03.png" title="Authentic Sauna" /></li>
+  <li><img src="images/pp04.png" title="Authentic Sauna" /></li>
+  <li><img src="images/pp01.png" title="3 Clicks Design: Home" /></li>
+  <li><img src="images/pp07.png" title="Portfolio I (1999-2001)" /></li>
+  <li><img src="images/pp08.png" title="Portfolio II (1999-2001)" /></li>
+</ul>
+    <section class="okProjectContribution">
+    <h6>Contribution</h6>  
+    <p>User profiles, goals, personas, task definitions, workflow, wireframes, information architecture, mockups, visual design, brand, logo design, HTML, JavaScript, illustrations, animations.</p>
+    </section> 
+  </section>
+ 
+<footer>	
+<address>
+		<ul>
+		  <li><a class="okLinkHead" href="tel:8168086177" title="Call">(816)808-6177</a></li>
+		  <li><a class="okLinkHead" href="mailto:tangospring@gmail.com?Subject=Your%20resume" title="Send email">tangospring@gmail.com</a></li>		  
+		</ul>
+	</address>
+    <div>Handcrafted by <a class="okLinkHead" href="okresume.html">Oleh Kovalchuke</a> in 2016</div>
+</footer>
+
+<!-- slider  --> 
 <script type="text/javascript">
 $(document).ready(function(){
+
+  $('#igot').bxSlider({
+  captions: true
+  }); 
+      
+  $('#di').bxSlider({
+  captions: true
+  }); 
+      
+  $('#ph').bxSlider({
+  captions: true
+  }); 
+        
+  $('#pcfa').bxSlider({
+  captions: true
+  }); 
+     
+  $('#phr').bxSlider({
+  captions: true
+  }); 
+    
+  $('#eg').bxSlider({
+  captions: true
+  }); 
+     
+  $('#pdst').bxSlider({
+  captions: true
+  });   
    
+  $('#pdpm').bxSlider({
+  captions: true
+  });    
+   
+  $('#pdcr').bxSlider({
+  captions: true
+  });   
+   
+  $('#pdtp').bxSlider({
+  captions: true
+  });   
+   
+  $('#pdsd').bxSlider({
+  captions: true
+  }); 
+ 
+   $('#pdus').bxSlider({
+  captions: true
+  });   
+   
+  $('#pc').bxSlider({
+  captions: true
+  });  
+    
+  $('#pe').bxSlider({
+  captions: true
+  });   
+  
+    $('#pp').bxSlider({
+  captions: true
+  }); 
+     
+<!-- fixed floating nav menu, also needs jQuery reference script in the head, 520 is page height scroll, after which the nav bar appears  -->
   $(window).on('scroll',function() {
     var scrolltop = $(this).scrollTop();
  
-    if(scrolltop >= 510) {
+    if(scrolltop >= 520) {
       $('#fixedbar').fadeIn(250);
-    }
-     
+    }  
     else if(scrolltop <= 505) {
       $('#fixedbar').fadeOut(250);
     }
   });
 });
-</script> 
-<!-- swapping CSS from print to screen and back --> 
-<script type="text/javascript">
-$(document).ready(function() { 
-	$(".oknavPrint").click(function() { 
-		$("link").attr("href",$(this).attr('rel'));
-	});
-});
 </script>
+
 </body>
 </html>
