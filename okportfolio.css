@@ -169,6 +169,7 @@ hr {
     border-top: medium double #999; 
     color: #999; 
     text-align: center; 
+    overflow: visible;
 } 
 hr.subproject {
     border-top: 1px dashed #ccc; 
