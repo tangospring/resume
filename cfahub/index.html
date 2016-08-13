@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="cfahubApp" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Code for America. Projects Hub. Add a project. Find a project to code."> 
+    <meta name="author" content="">
+    <link rel="icon" href="assets/favicon.ico">
+    <title>Projects Hub. Code for America.</title>
+
+    <!-- JQUERY -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- ANGULAR -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="ng/app.js"></script>
+    <script src="ng/services/projectService.js"></script>
+    <script src="ng/services/projectIdeaService.js"></script>
+    <script src="ng/services/coaApiService.js"></script>
+    <script src="ng/services/githubOrgApiService.js"></script>   
+    <script src="ng/services/googleDataApiService.js"></script> 
+    <script src="ng/controllers/gen.js"></script>     
+    <script src="ng/controllers/ProjectController.js"></script>
+    <script src="ng/controllers/ProjectListController.js"></script>
+    <script src="ng/controllers/ProjectIdeaController.js"></script>
+    <script src="ng/controllers/ProjectIdeaListController.js"></script>
+    <script src="ng/controllers/ExternalApiController.js"></script>    
+    <script src="ng/controllers/HubController.js"></script>
+
+
+    <!-- LEAFLET MAP -->
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+
+    <!-- Project custom styles -->
+    <link href="assets/css/utility.css" rel="stylesheet">
+    <link href="assets/css/general.css" rel="stylesheet">
+    <link href="assets/css/hubpage.css" rel="stylesheet">
+    <link href="assets/css/projectpage.css" rel="stylesheet">
+    <link href="assets/css/map.css" rel="stylesheet">
+    <link href="assets/css/project.css" rel="stylesheet">
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- temp nav system to get around -->
+    <ul id="univesalnav" class="nav nav-tabs">
+        <li><a href="#/hub">hub</a></li>
+        <li><a href="#/git">cfa api</a></li>
+    </ul>
+    <div class="OK-main-view" ng-view></div>
+
+   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script> 
+</body>
+</html>
