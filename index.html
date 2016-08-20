@@ -29,10 +29,8 @@
 </head>
 
 <body>
-<nav id="fixedbar">
-<a href="#top" id="okPtop">&rsaquo;</a>
-</nav>
-
+<!-- the magic disappearing scroll to top button -->
+<button id="scrollToTop">&rsaquo;</button>
 <header>
 	<address>
 		<ul>
@@ -369,7 +367,7 @@
 		  <li><a class="okLinkHead" href="mailto:tangospring@gmail.com?Subject=Your%20resume" title="Send email">tangospring@gmail.com</a></li>		  
 		</ul>
 	</address>
-    <div>Handcrafted by <a class="okLinkHead" href="okresume.html">Oleh Kovalchuke</a> in 2016</div>
+    <div>Handcrafted by <a class="okLinkHead" href="okresume.html" title="View resume">Oleh Kovalchuke</a> in 2016</div>
 </footer>
 
 <!-- slider  --> 
@@ -435,20 +433,12 @@ $(document).ready(function(){
     $('#pp').bxSlider({
   captions: true
   }); 
-     
-<!-- fixed floating nav menu, also needs jQuery reference script in the head, 520 is page height scroll, after which the nav bar appears  -->
-  $(window).on('scroll',function() {
-    var scrolltop = $(this).scrollTop();
- 
-    if(scrolltop >= 520) {
-      $('#fixedbar').fadeIn(250);
-    }  
-    else if(scrolltop <= 505) {
-      $('#fixedbar').fadeOut(250);
-    }
-  });
+
 });
 </script>
+    
+<!-- script for the magic disappearing scroll to top button -->
+<script src="js/scroll-to-top.js"></script>
 
 </body>
 </html>

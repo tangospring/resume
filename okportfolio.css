@@ -37,6 +37,36 @@ h1 a {
 h1 a:hover {
 	color: #efb9b2;
 }
+/*
+ scrollToTop anchor icon, Javscript will show this element on scrolling up
+ */
+#scrollToTop {
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+	font-size: 30pt;
+	line-height:0.2em;
+	padding:0.37em 0.35em 0.55em 0.4em;	
+	margin:0;
+	color: #fff; 
+    border-width:0;
+	border-radius:50%;
+	background: #cb422f;
+	-ms-transform:rotate(270deg);
+	-webkit-transform:rotate(270deg);
+	-o-transform:rotate(270deg);
+	-moz-transform:rotate(270deg);
+	-webkit-transform:rotate(270deg);	
+	-webkit-transition: all 0.2s linear;
+  	-moz-transition: all 0.2s linear;
+  	transition: all 0.2s linear;  
+    z-index: 90000;
+    display: none;    
+}
+#scrollToTop:hover, #scrollToTop:active, #scrollToTop:focus {
+    text-decoration: none;
+    background:#e32f16;
+}
 /************* head */
 header {
 	color: #fff; 
@@ -267,28 +297,6 @@ hr.year1998-2004:after {
   margin:0 30px 40px 0;
   text-align:center;
   z-index:10;
-}
-a#okPtop  {
-	display:inline-block;
-	font-size: 30pt;
-	line-height:0.2em;
-	padding:0.37em 0.35em 0.55em 0.4em;	
-	margin:0;
-	color: #fff; 
-	border-radius:50%;
-	background: rgba(51,51,51,0.5);
-	-ms-transform:rotate(270deg);
-	-webkit-transform:rotate(270deg);
-	-o-transform:rotate(270deg);
-	-moz-transform:rotate(270deg);
-	-webkit-transform:rotate(270deg);	
-	-webkit-transition: all 0.2s linear;
-  	-moz-transition: all 0.2s linear;
-  	transition: all 0.2s linear;
-}
-a#okPtop:hover { 
-	color: #cb422f; 
-	background: rgba(51,51,51,1);
 }
 
 /* =============== mobile ============== */
