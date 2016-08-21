@@ -63,9 +63,13 @@ h1 a:hover {
     z-index: 90000;
     display: none;    
 }
-#scrollToTop:hover, #scrollToTop:active, #scrollToTop:focus {
+#scrollToTop:hover {
     text-decoration: none;
     padding:0.37em 0.25em 0.55em 0.5em;	
+    background:#e32f16;
+}
+#scrollToTop:hover, #scrollToTop:active, #scrollToTop:focus {
+    text-decoration: none;
     background:#e32f16;
 }
 /************* head */
